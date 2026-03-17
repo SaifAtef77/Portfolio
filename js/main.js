@@ -52,21 +52,6 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Reveal on scroll
-const revealElements = document.querySelectorAll(".reveal");
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
-  },
-  { threshold: 0.1 },
-);
-
-revealElements.forEach((el) => observer.observe(el));
-
 // Simple form validation
 document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
