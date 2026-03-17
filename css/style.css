@@ -5,9 +5,12 @@
   --primary-dark: #0284c7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", system-ui, sans-serif;
-  scroll-behavior: smooth;
 }
 
 .hero-bg {
